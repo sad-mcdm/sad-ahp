@@ -1,14 +1,14 @@
-# Nexus AHP — Priorização Hierárquica Matricial
+# SAD AHP — Priorização Hierárquica Matricial
 
-Este repositório é o módulo independente do ecossistema **NEXUS MCDM**, configurado para operar exclusivamente com o método **AHP (Analytic Hierarchy Process)**.
+Este repositório é o módulo independente do ecossistema **SAD MCDM**, configurado para operar exclusivamente com o método **AHP (Analytic Hierarchy Process)**.
 
 ---
 
 ## 🎨 Identidade Visual e Branding
-- **Nome Oficial:** Nexus AHP
+- **Nome Oficial:** SAD AHP
 - **Cores Oficiais:** Dourado (`#D97706`) e Grafite (`#4B5563`)
 - **Conceito Visual:** Árvore hierárquica de decisão representando as ramificações de múltiplos níveis de critérios.
-- **Copyright:** Direitos Reservados © 2026 NEXUS-MCDM. Todos os direitos reservados.
+- **Copyright:** Direitos Reservados © 2026 SAD-MCDM. Todos os direitos reservados.
 
 ---
 
@@ -36,7 +36,7 @@ Com a propriedade de reciprocidade: $a_{ji} = \frac{1}{a_{ij}}$.
 ### 3. Extração dos Pesos ($w$)
 O vetor de pesos $w$ corresponde ao autovetor principal normalizado da matriz de comparações:
 $$A w = \lambda_{\max} w$$
-Onde $\lambda_{\max}$ é o maior autovalor da matriz $A$. O resolvedor do Nexus calcula essa aproximação normalizando as colunas da matriz e tirando a média aritmética das linhas correspondentes:
+Onde $\lambda_{\max}$ é o maior autovalor da matriz $A$. O resolvedor do SAD calcula essa aproximação normalizando as colunas da matriz e tirando a média aritmética das linhas correspondentes:
 1. Normalização das colunas: $a'_{ij} = \frac{a_{ij}}{\sum_{k=1}^n a_{kj}}$
 2. Vetor de pesos: $w_i = \frac{1}{n} \sum_{j=1}^n a'_{ij}$
 
